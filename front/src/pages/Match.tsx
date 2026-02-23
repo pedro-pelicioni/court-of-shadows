@@ -5,6 +5,7 @@ import { useMatchStore, TurnPhase, CardClass } from '../store/useMatchStore';
 import type { SlotPosition } from '../store/useMatchStore';
 import { socket } from '../lib/socket';
 import CardDisplay from '../components/CardDisplay';
+import RulesModal from '../components/RulesModal';
 
 function InfluencePips({ value, side }: { value: number; side: 'mine' | 'opponent' }) {
     const MAX = 5;
@@ -76,6 +77,7 @@ export default function Match() {
 
     return (
         <div className="match-layout">
+            <RulesModal />
             {/* Backgrounds */}
             <div className="match-bg" style={{ backgroundImage: 'url(/background.png)' }} />
             <div className="match-overlay" />

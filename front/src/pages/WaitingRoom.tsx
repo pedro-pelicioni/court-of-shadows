@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useWalletStore } from '../store/useWalletStore';
 import { socket } from '../lib/socket';
+import RulesModal from '../components/RulesModal';
 
 interface RoomState {
     id: string;
@@ -46,6 +47,7 @@ export default function WaitingRoom() {
 
     return (
         <div className="page">
+            <RulesModal />
             <div className="page-bg" style={{ backgroundImage: 'url(/background.png)' }} />
             <div className="page-overlay" />
 

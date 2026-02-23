@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useWalletStore } from '../store/useWalletStore';
 import { socket } from '../lib/socket';
+import RulesModal from '../components/RulesModal';
 
 export default function Lobby() {
     const navigate = useNavigate();
@@ -46,6 +47,7 @@ export default function Lobby() {
 
     return (
         <div className="page">
+            <RulesModal />
             <div className="page-bg" style={{ backgroundImage: 'url(/background.png)' }} />
             <div className="page-overlay" />
 
