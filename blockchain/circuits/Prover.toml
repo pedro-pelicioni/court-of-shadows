@@ -1,0 +1,13 @@
+# Crown & Shadows - Prover inputs
+# Edit these values with the actual (private) game card data.
+# This file is NEVER committed or sent to the network.
+#
+# actual_card_class:
+#   knight=1, herald=2, baron=3, bishop=4, countess=5, duke=6, assassin=7, king=8
+
+# Private inputs
+actual_card_class = "3"   # e.g., BARON
+salt = "12345678"         # Random 32-byte number as a decimal string
+
+# Public inputs are derived by running `nargo execute` and
+# come from the Pedersen hash of (actual_card_class, salt).
