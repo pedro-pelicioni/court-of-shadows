@@ -21,6 +21,14 @@ export default function Home() {
                     <h1 className="home-title font-display">COURT<br />OF<br />SHADOWS</h1>
                     <p className="home-subtitle">Bluff. Challenge. Conquer.</p>
 
+                    <button
+                        className="btn btn-sm"
+                        style={{ margin: '0 auto 20px', display: 'block', background: 'rgba(200,151,58,0.10)', border: '1px solid rgba(200,151,58,0.25)', color: '#c8973a', fontSize: '12px', letterSpacing: '0.08em' }}
+                        onClick={() => navigate('/how-to-play')}
+                    >
+                        📜 How to Play
+                    </button>
+
                     {!address ? (
                         <button
                             className="btn btn-gold btn-wide"

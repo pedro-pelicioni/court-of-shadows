@@ -1056,3 +1056,195 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
+
+/* ═══════════════════════════════════════════════
+   HOW TO PLAY PAGE
+   ═══════════════════════════════════════════════ */
+.how-to-play-card {
+  max-width: 700px;
+  width: 100%;
+  padding: 40px 36px 36px;
+  position: relative;
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+.how-to-back {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  padding: 6px 14px;
+}
+
+.how-to-back:hover {
+  color: #c8973a;
+  border-color: rgba(200, 151, 58, 0.3);
+}
+
+.htp-section {
+  margin-bottom: 28px;
+}
+
+.htp-heading {
+  font-size: 15px;
+  font-weight: 700;
+  color: #c8973a;
+  letter-spacing: 0.06em;
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(200, 151, 58, 0.15);
+}
+
+.htp-text {
+  font-size: 13.5px;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.7;
+}
+
+.htp-text strong {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.htp-text em {
+  color: #c8973a;
+  font-style: normal;
+}
+
+.htp-list {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+}
+
+.htp-list li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 8px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.6;
+}
+
+.htp-list li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: #c8973a;
+}
+
+.htp-list li strong {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* ── Turn Steps ── */
+.htp-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.htp-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 14px 16px;
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+}
+
+.htp-step-num {
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(200, 151, 58, 0.12);
+  border: 1px solid rgba(200, 151, 58, 0.3);
+  color: #c8973a;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.htp-step strong {
+  display: block;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 13.5px;
+  margin-bottom: 2px;
+}
+
+.htp-step p {
+  font-size: 12.5px;
+  color: rgba(255, 255, 255, 0.45);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ── Card Reference Table ── */
+.htp-card-table {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.htp-card-row {
+  display: grid;
+  grid-template-columns: 100px 50px 1fr;
+  padding: 10px 14px;
+  font-size: 12.5px;
+  color: rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  align-items: center;
+}
+
+.htp-card-row:last-child {
+  border-bottom: none;
+}
+
+.htp-card-header {
+  background: rgba(200, 151, 58, 0.08);
+  color: #c8973a;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.htp-card-name {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+}
+
+/* scrollbar */
+.how-to-play-card::-webkit-scrollbar {
+  width: 4px;
+}
+
+.how-to-play-card::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.how-to-play-card::-webkit-scrollbar-thumb {
+  background: rgba(200, 151, 58, 0.2);
+  border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+  .how-to-play-card {
+    padding: 32px 20px 24px;
+  }
+
+  .htp-card-row {
+    grid-template-columns: 80px 40px 1fr;
+    font-size: 11.5px;
+    padding: 8px 10px;
+  }
+}

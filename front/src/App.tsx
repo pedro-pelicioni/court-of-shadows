@@ -5,6 +5,7 @@ import Lobby from './pages/Lobby';
 import WaitingRoom from './pages/WaitingRoom';
 import Match from './pages/Match';
 import MatchResult from './pages/MatchResult';
+import HowToPlay from './pages/HowToPlay';
 import { useWalletStore } from './store/useWalletStore';
 
 function App() {
@@ -76,6 +77,7 @@ function App() {
         <Route path="/waiting/:roomId" element={<WaitingRoom />} />
         <Route path="/match" element={<Match />} />
         <Route path="/result" element={<MatchResult />} />
+        <Route path="/how-to-play" element={<HowToPlay />} />
       </Routes>
     </Router>
   );
