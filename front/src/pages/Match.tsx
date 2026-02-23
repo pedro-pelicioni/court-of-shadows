@@ -111,7 +111,7 @@ export default function Match() {
                             <p className="slot-label">Slot {slot}</p>
                             <div className={`board-card face-down ${match.opponent.slotsCount > (slot === 'L' ? 0 : 1) ? '' : 'empty'}`}>
                                 {match.opponent.slotsCount > (slot === 'L' ? 0 : 1)
-                                    ? <span style={{ fontSize: '24px', opacity: 0.3 }}>⚜</span>
+                                    ? <img src="/characters/verse.png" alt="Face-down card" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '8px' }} />
                                     : <span style={{ fontSize: '11px', color: 'rgba(255,255,255,0.2)' }}>Empty</span>
                                 }
                             </div>
